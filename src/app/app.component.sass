@@ -85,10 +85,11 @@ nav
   flex-flow: row nowrap
   align-items: flex-start
   justify-content: flex-start
-  height: $page-height
-  width: $page-width
+  height: calc(#{$page-height} - 1em)
+  width: calc(#{$page-width} - 1em)
   background-color: $nan-bg
   color: $nan-main
+  margin: 0.5em
 
 @media(max-width: 758px)
   nav
