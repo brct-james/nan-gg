@@ -10,6 +10,7 @@ import { BudgetsComponent } from './budgets/budgets.component';
 import { FundsComponent } from './funds/funds.component';
 import { TransactionsComponent } from './transactions/transactions.component';
 import { SettingsComponent } from './settings/settings.component';
+import { AccountWidgetComponent } from './accounts/account-widget/account-widget.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { SettingsComponent } from './settings/settings.component';
     BudgetsComponent,
     FundsComponent,
     TransactionsComponent,
-    SettingsComponent
+    SettingsComponent,
+    AccountWidgetComponent
   ],
   imports: [
     BrowserModule,

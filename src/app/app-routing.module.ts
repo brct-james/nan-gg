@@ -10,7 +10,9 @@ import { SettingsComponent } from './settings/settings.component';
 
 const routes: Routes = [
   { path: '', component: HomepageComponent },
-  { path: 'a', component: AccountsComponent },
+  { path: 'a', redirectTo: 'a/', pathMatch: 'full' },
+  { path: 'a', children: [{ path: '', component: AccountsComponent }] },
+  // { path: 'a', component: AccountsComponent },
   { path: 'g', component: GoalsComponent },
   { path: 'b', component: BudgetsComponent },
   { path: 'f', component: FundsComponent },

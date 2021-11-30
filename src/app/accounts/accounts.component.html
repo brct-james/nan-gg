@@ -1,1 +1,6 @@
-<p>accounts works!</p>
+<div id="accountsOverview">
+  <h2>Accounts</h2>
+  <div id="accountsList">
+    <app-account-widget *ngFor="let account of accountArr" [account]="account"></app-account-widget>
+  </div>
+</div>
