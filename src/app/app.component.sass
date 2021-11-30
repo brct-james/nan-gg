@@ -1,0 +1,113 @@
+@import './variables.sass'
+
+.pageContainer
+  display: flex
+  flex-direction: row
+  align-items: flex-start
+  justify-content: flex-start
+#titleContainer
+  display: flex
+  flex-direction: row
+  align-items: center
+  justify-content: center
+  width: 100%
+  img
+    height: 50%
+    width: 50%
+    margin: 0.5em
+  h1
+    font-size: 1.5em
+    line-height: 0.8em
+    text-align: center
+    color: $nan-main
+    font-family: ExpletusSans, Arial
+    font-weight: 700
+    margin: auto 0
+  // margin: 0.5em
+  // margin-top: auto
+nav
+  display: flex
+  flex-direction: column
+  justify-content: flex-start
+  align-items: flex-start
+  border-right: solid $nan-main 3px
+  height: $page-height
+  width: $nav-width
+  background-color: $nan-nav
+  font-size: 18px
+  .navLinks
+    width: 100%
+    height: 100%
+    display: flex
+    flex-direction: column
+    justify-content: flex-start
+    align-items: flex-end
+    margin-bottom: -1px
+    margin-left: 1px
+    // text-align: right
+    a
+      // margin-right: 1em
+      // margin-top: 1em
+      width: $nav-width - 4*$nav-link-padding + 1px
+      padding: $nav-link-padding
+      display: block
+      text-decoration: none
+      // background-color: $nan-main
+      color: $main-white
+      font-weight: bold
+      // border-radius: 4px 4px 0 0
+      &#homepageLink
+        background-color: $main-red
+      &#accountsLink
+        background-color: $main-orange
+      &#goalsLink
+        background-color: $main-yellow
+      &#budgetsLink
+        background-color: $main-green
+      &#fundsLink
+        background-color: $main-blue
+      &#transactionsLink
+        background-color: $main-indigo
+      &#settingsLink
+        background-color: $main-violet
+      &#githubLink
+        background-color: $main-white
+        color: $nan-main
+        white-space: nowrap
+        i
+          margin-left: 0.25em
+      &:hover
+        width: $nav-width - 2*$nav-link-padding + 1px
+      &.active
+        width: $nav-width - 2*$nav-link-padding + 1px
+.bodyContent
+  display: flex
+  flex-flow: row nowrap
+  align-items: flex-start
+  justify-content: flex-start
+  height: $page-height
+  width: $page-width
+  background-color: $nan-bg
+  color: $nan-main
+
+@media(max-width: 758px)
+  nav
+    a
+      width: $nav-width - 4*$nav-link-padding + 1px - 20px
+    // nav
+    //     position: relative
+    //     margin-bottom: 60px
+    //     a
+    //         border-radius: 0 0 4px 4px
+    //         padding: 0.5em
+    //         margin-right: 0.5em
+    // .navLinks
+    //     position: absolute
+    //     top: 86px
+    //     width: 98vw
+@media(max-width: 645px)
+  nav
+    a
+      width: $nav-width - 4*$nav-link-padding + 1px - 40px
+    // .navLinks
+    //     top: 101px
