@@ -1,0 +1,26 @@
+@import '../variables.sass'
+  
+#budgetsOverview
+  display: flex
+  flex-flow: column wrap
+  align-items: flex-start
+  justify-content: flex-start
+  color: $main-text
+  background-color: $bg-highlight
+  border-radius: 5px
+  width: calc(#{$body-width} - 1em)
+  height: calc(#{$body-height} - 1em)
+  padding: 0.5em
+  h2
+    margin: 0
+    font-size: 2em
+  #budgetsTable
+    width: calc(#{$body-width} - 1em)
+    #budgetsTable-header
+      background-color: #fcff43
+    .budget
+      width: calc(#{$body-width} - 1em)
+      background-color: #ffffe9
+      text-align: center
+      &:nth-of-type(odd)
+        background-color: #fdff9e

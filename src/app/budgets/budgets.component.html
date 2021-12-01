@@ -1,1 +1,31 @@
-<p>budgets works!</p>
+<div id="budgetsOverview">
+  <h2>Budgets</h2>
+  <table id="budgetsTable">
+    <tr id="budgetsTable-header">
+      <th>Month</th>
+      <th>Name</th>
+      <th>Description</th>
+      <th>Income</th>
+      <th>Attributed</th>
+      <th>Balance</th>
+    </tr>
+    <tr *ngFor="let budget of budgetsArr" class="budget">
+      <td>{{ budget.month }} {{ budget.year }}</td>
+      <td>
+        {{ budget.name }}
+      </td>
+      <td>
+        {{ budget.description }}
+      </td>
+      <td>
+        {{ budget.income }}
+      </td>
+      <td>
+        {{ budget.attributed }}
+      </td>
+      <td>
+        {{ budget.balance }}
+      </td>
+    </tr>
+  </table>
+</div>
