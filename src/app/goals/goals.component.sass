@@ -1,0 +1,30 @@
+@import '../variables.sass'
+  
+#goalsOverview
+  display: flex
+  flex-flow: column wrap
+  align-items: flex-start
+  justify-content: flex-start
+  color: $main-text
+  background-color: $bg-highlight
+  border-radius: 5px
+  width: calc(#{$body-width} - 1em)
+  height: calc(#{$body-height} - 1em)
+  padding: 0.5em
+  h2
+    margin: 0
+    font-size: 2em
+  #goalsTable
+    // display: flex
+    // flex-flow: column wrap
+    // align-items: center
+    // justify-content: center
+    width: calc(#{$body-width} - 1em)
+    #goalsTable-header
+      background-color: #fcff43
+    .goal
+      width: calc(#{$body-width} - 1em)
+      background-color: #ffffe9
+      text-align: center
+      &:nth-of-type(odd)
+        background-color: #fdff9e

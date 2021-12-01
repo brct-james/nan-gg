@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./accounts.component.sass'],
 })
 export class AccountsComponent implements OnInit {
-  accountArr: any[] = [
+  accountsArr: any[] = [
     {
       name: 'Chase Joint Checking',
       nickname: 'Chase JC',

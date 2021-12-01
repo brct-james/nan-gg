@@ -1,1 +1,32 @@
-<p>goals works!</p>
+<div id="goalsOverview">
+  <h2>Goals</h2>
+  <table id="goalsTable">
+    <tr id="goalsTable-header">
+      <th>Rank</th>
+      <th>Name</th>
+      <th>Target</th>
+      <th>Remaining</th>
+      <th>Progress</th>
+      <th>Current Value</th>
+    </tr>
+    <tr *ngFor="let goal of goalsArr" class="goal">
+      <td>
+        {{ goal.rank }}
+      </td>
+      <td>
+        {{ goal.name }}
+      </td>
+      <td>
+        {{ goal.target }}
+      </td>
+      <td>
+        {{ goal.target - goal.value }}
+      </td>
+      <td>{{ (goal.value / goal.target) * 100 }}%</td>
+      <td>
+        {{ goal.value }}
+      </td>
+      <!-- <app-goal-list-item [goal]="goal"></app-goal-list-item> -->
+    </tr>
+  </table>
+</div>
