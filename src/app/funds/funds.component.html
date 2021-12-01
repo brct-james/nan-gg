@@ -1,1 +1,33 @@
-<p>funds works!</p>
+<div id="fundsOverview">
+  <h2>Funds</h2>
+  <table id="fundsTable">
+    <tr id="fundsTable-header">
+      <th>Fund Number</th>
+      <th>Name</th>
+      <th>Description</th>
+      <th>Category</th>
+      <th>Account</th>
+      <th>Balance</th>
+    </tr>
+    <tr *ngFor="let fund of fundsArr" class="fund">
+      <td>
+        {{ fund.fund_number }}
+      </td>
+      <td>
+        {{ fund.name }}
+      </td>
+      <td>
+        {{ fund.description }}
+      </td>
+      <td>
+        {{ fund.category }}
+      </td>
+      <td>
+        {{ fund.account }}
+      </td>
+      <td>
+        {{ fund.balance }}
+      </td>
+    </tr>
+  </table>
+</div>
